@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.slot-machine {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.reel {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  background-color: #fff;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.winner {
+  animation: flash 1s infinite;
+}
+
+.disclaimer {
+  margin-top: 30px;
+  color: red;
+  font-weight: bold;
+}
+
+.reel-animate {
+  animation: spin 1s ease-in-out;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateX(0);
+  }
+
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
+.is__pointer {
+  cursor: pointer;
+}
+
+.list_instruction {
+  text-align: left;
+  padding: 0 0 0 20px;
+  font-size: 16px;
+}
